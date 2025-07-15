@@ -7,10 +7,13 @@ export const AppWriteConfig = {
     plartform: "com.lonwaboitsolutions.foodspaza",
     projectId: process.env.EXPO_PUBLIC_APPWRITE_PROJECT_ID!,
     databaseId: "KasilethuFoodSpaza369",
-    userCollectionId: "687555190022b49959b1"
-}
-
-
+    bucketId: '687681e7002d591254e6',
+    userCollectionId: "687555190022b49959b1",
+    categoriesCollectionId: '687677db003d1b9204ae',
+    menuCollectionId: '687679b70004171f9d24',
+    additivesCollectionId: '68767f190023dd77d4ac',
+    menuAdditivesCollectionId: '6876806d001a61279782',
+} 
 
 // Initialize the AppWrite Client
 export const client = new Client();
