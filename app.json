@@ -33,6 +33,7 @@
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
         }
+<<<<<<< HEAD
       ],
       [
         "@sentry/react-native/expo",
@@ -41,6 +42,8 @@
           "project": "food-spaza",
           "organization": "kasilethu-enterprise"
         }
+=======
+>>>>>>> c4abd6f9a9d6ea1df3ccb037d3909d4fa852bb0d
       ]
     ],
     "experiments": {

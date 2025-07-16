@@ -15,7 +15,10 @@
     "@react-navigation/bottom-tabs": "^7.3.10",
     "@react-navigation/elements": "^2.3.8",
     "@react-navigation/native": "^7.1.6",
+<<<<<<< HEAD
     "@sentry/react-native": "^6.17.0",
+=======
+>>>>>>> c4abd6f9a9d6ea1df3ccb037d3909d4fa852bb0d
     "clsx": "^2.1.1",
     "expo": "~53.0.17",
     "expo-blur": "~14.1.5",
@@ -43,8 +46,12 @@
     "react-native-url-polyfill": "^2.0.0",
     "react-native-web": "~0.20.0",
     "react-native-webview": "13.13.5",
+<<<<<<< HEAD
     "tailwindcss": "^3.4.17",
     "zustand": "^5.0.6"
+=======
+    "tailwindcss": "^3.4.17"
+>>>>>>> c4abd6f9a9d6ea1df3ccb037d3909d4fa852bb0d
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",

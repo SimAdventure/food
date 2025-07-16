@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import CustomButton from '@/components/CustomButton'
 import CustomInput from '@/components/CustomInput'
 import { createUser } from '@/lib/AppWrite'
@@ -80,4 +81,19 @@ const SignUp = () => {
   )
 }
 
+=======
+import { router } from 'expo-router'
+import React from 'react'
+import { Button, Text, View } from 'react-native'
+
+const SignUp = () => {
+  return (
+    <View>
+      <Text>sign_up</Text>
+      <Button title='Sign In' onPress={() => router.push('/sign_in')} />
+    </View>
+  )
+}
+
+>>>>>>> c4abd6f9a9d6ea1df3ccb037d3909d4fa852bb0d
 export default SignUp

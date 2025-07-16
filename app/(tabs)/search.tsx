@@ -1,3 +1,4 @@
+
 import seed from '@/lib/seed'
 import React from 'react'
 import { Button, SafeAreaView, Text } from 'react-native'
@@ -17,4 +18,3 @@ const search = () => {
   )
 }
 
-export default search
