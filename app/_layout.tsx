@@ -1,14 +1,10 @@
-<<<<<<< HEAD
 import useAuthStore from "@/store/auth.store";
 import * as Sentry from '@sentry/react-native';
-=======
->>>>>>> c4abd6f9a9d6ea1df3ccb037d3909d4fa852bb0d
 import { useFonts } from "expo-font";
 import { SplashScreen, Stack } from "expo-router";
 import { useEffect } from "react";
 import './global.css';
 
-<<<<<<< HEAD
 Sentry.init({
   dsn: 'https://8e8afd14ddf21a82813e2a44345365e1@o4509666651013120.ingest.de.sentry.io/4509671747158096',
 
@@ -34,23 +30,12 @@ export default Sentry.wrap(function RootLayout() {
     "QuickSand-Medium": require("../assets/fonts/Quicksand-Medium.ttf"),
     "QuickSand-SemiBold": require("../assets/fonts/Quicksand-SemiBold.ttf"),
     "QuickSand-Light": require("../assets/fonts/Quicksand-Light.ttf"),
-=======
-export default function RootLayout() {
-
-  const [fontsLoaded, error] = useFonts({
-    "QuickSand-Bold": require( "./assets/fonts/Quicksand-Bold.ttf"),
-    "QuickSand-Regular": require("./assets/fonts/Quicksand-Regular.ttf"),
-    "QuickSand-Medium": require("./assets/fonts/Quicksand-Medium.ttf"),
-    "QuickSand-SemiBold": require("./assets/fonts/Quicksand-SemiBold.ttf"),
-    "QuickSand-Light": require("./assets/fonts/Quicksand-Light.ttf"),
->>>>>>> c4abd6f9a9d6ea1df3ccb037d3909d4fa852bb0d
   });
 
   useEffect(() => {
     if(error) throw error;
     if(fontsLoaded) SplashScreen.hideAsync();
   }, [fontsLoaded, error]);
-<<<<<<< HEAD
  
   useEffect(() => {
     fetchAuthenticatedUser()
@@ -61,8 +46,3 @@ export default function RootLayout() {
 
   return <Stack screenOptions={{ headerShown: false }}/>;
 });
-=======
-
-  return <Stack screenOptions={{ headerShown: false }}/>;
-}
->>>>>>> c4abd6f9a9d6ea1df3ccb037d3909d4fa852bb0d
