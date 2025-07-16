@@ -1,26 +1,27 @@
-<<<<<<< HEAD
-import React from 'react'
-import { Text, View } from 'react-native'
+import { useRouter } from "expo-router";
+import { Image, Text, TouchableOpacity, View } from "react-native";
 
-const CustomHeader = () => {
-  return (
-    <View>
-      <Text>CustomHeader</Text>
-    </View>
-  )
-}
+import { images } from "@/constants";
+import { CustomHeaderProps } from "@/type";
 
-=======
-import React from 'react'
-import { Text, View } from 'react-native'
+const CustomHeader = ({ title }: CustomHeaderProps) => {
+    const router = useRouter();
 
-const CustomHeader = () => {
-  return (
-    <View>
-      <Text>CustomHeader</Text>
-    </View>
-  )
-}
+    return (
+        <View className="custom-header">
+            <TouchableOpacity onPress={() => router.back()}>
+                <Image
+                    source={images.arrowBack}
+                    className="size-5"
+                    resizeMode="contain"
+                />
+            </TouchableOpacity>
 
->>>>>>> c4abd6f9a9d6ea1df3ccb037d3909d4fa852bb0d
-export default CustomHeader
+            {title && <Text className="base-semibold text-dark-100">{title}</Text>}
+
+            <Image source={images.search} className="size-5" resizeMode="contain" />
+        </View>
+    );
+};
+
+export default CustomHeader;
