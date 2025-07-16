@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import { images } from '@/constants';
 import useAuthStore from '@/store/auth.store';
 import { TabBarIconProps } from '@/type';
@@ -77,16 +77,4 @@ export default function Tablayout() {
     </Tabs>
     
   );
-=======
-import { Redirect, Slot } from 'expo-router';
-import React from 'react';
-
-export default function _layout() {
-    const isAuthenticated = false;
-
-    if(!isAuthenticated) return <Redirect  href="/sign_in"/>
-  return (
-    <Slot />
-  )
->>>>>>> c4abd6f9a9d6ea1df3ccb037d3909d4fa852bb0d
 }
